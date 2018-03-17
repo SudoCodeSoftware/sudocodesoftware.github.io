@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <link rel='stylesheet' type='text/css' href='style.css' />
+        <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="res/favicon.ico" />
+        <link rel="apple-touch-icon" href="res/WebClip.png">
+        
+        <script type="text/javascript" src="S-Func.js"></script>
+        <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="jquery.jkit.1.2.16.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('body').jKit();
+                MainLoop();
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        appId      : '303155660018639',
+                        xfbml      : true,
+                        version    : 'v2.6'
+                    });
+                };
+
+                (function(d, s, id){
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+                //<p class="fb-like" data-share="true" data-width="450" data-show-faces="true"></p>
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+
+        <ul class="list">
+            <li><a href="" id="tab1" data-jkit="[scroll:speed=150]" class="">Intro</a></li>
+            <li><a href="#about" id="tab2" data-jkit="[scroll:speed=150]" class="active">About Us</a></li>
+            <li><a href="#what" id="tab3" data-jkit="[scroll:speed=150]" class="">What We Do</a></li>
+            <li><a href="#projects" id="tab4" data-jkit="[scroll:speed=150]">Projects</a></li>
+            <li><a href="#contact" id="tab5" data-jkit="[scroll:speed=150]">Get In Touch</a></li>
+            <li style="float:right"><a href="forums.sudo-code.com">Forums</a></li>
+        </ul>
+        
+        
+        <div class="wrapper">
+            <div class="green main_wrapper">
+
+                <div class="intro_wrapper" id = "intro">
+
+                    <img class="logo" src="res/logo.png" alt="logo" align="right">
+
+                    <div class="space_100"></div>
+                    
+                    <div class="intro_content_wrapper">
+                        <h1>Sudo-Code Software</h1>
+                        <h3 class="subtitle">We make games and stuff.</h3>
+
+
+                        <div class="space_50"></div>
+
+                        <div class="learn_wrapper">
+                            <a href="#what" data-jkit="[scroll:speed=500]"><span class="learn">learn more</span></a>
+                        </div>
+                    </div>
+
+                    <div class="space_20"></div>
+
+
+
+                </div>
+                
+                <div class="about_wrapper" id="about">
+                    
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="sprite_habitat_nath">
+                                <img class="sprite" src="res/NathIcon.png" alt="logo">
+                            </td>
+                            <td class="sprite_text_nath">
+                                <h2>Nathyglobal</h2>
+                                <br>
+                                <h3>The Big, Friendly MySQL Giant</h3>
+                                <br>
+                                <p>This database-inclined team member is a jack of many trades, and a master of a fair number of them interestingly enough. He is currently studying advanced science alongside engineering, majoring in physics and aerospace respectively.</p>
+                                <br>
+                                <ul>
+                                    <li>Database &amp; Network Specialist</li>
+                                    <li>Code-Monkey</li>
+                                </ul>
+                                <div class="space_50"></div>
+                                <a href="https://twitter.com/NathGlobal" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @NathGlobal</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sprite_habitat_jmo">
+                                <img class="sprite" src="res/J-MoIcon.png" alt="logo">
+                            </td>
+                            <td class="sprite_text_jmo">
+                                <h2>J-Mo</h2>
+                                <br>
+                                <h3>Style-Sheet &amp; Formatting Exorcist</h3>
+                                <br>
+                                <p>Finding flowcharts aesthetically pleasing and taking a sadistic pleasure in implementing Agile tools, he isn't afraid to wrestle with some unruly CSS. Currently studying Information Technology, focusing on graphics and interaction design.</p>
+                                <br>
+                                <ul>
+                                    <li>Lead Concept &amp; UX Designer</li>
+                                    <li>Project Manager</li>
+                                </ul>
+                                <div class="space_50"></div>
+                                <a href="https://twitter.com/J_Mo63" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @J_Mo63</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sprite_habitat_doust">
+                                <img class="sprite" src="res/DoustIcon.png" alt="logo">
+                            </td>
+                            <td class="sprite_text_doust">
+                                <h2>Jalfor</h2>
+                                <br>
+                                <h3>A Very Angry Coder</h3>
+                                <br>
+                                <p>Having this guy in your team is quite the blessing, especially when he can fix even the most disturbing problems by yelling at the code. He is currently studying a double degree in science and engineering, majoring in mechatronic engineering.</p>
+                                <br>
+                                <ul>
+                                    <li>Lead Programmer</li>
+                                    <li>Chief Problem Solver</li>
+                                </ul>
+                                <div class="space_50"></div>
+                                <a href="https://twitter.com/jalerous" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @jalerous</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+                <div class="what_wrapper" id = "what">
+                    
+                    <div class="intro_content_wrapper">
+                        <h2>What we do</h2>
+                        <div class="space_20"></div>
+                        <p>Sudo-Code Software is a small development team based in Sydney, Australia. We primarily make apps, video games, and personal to enterprise-level websites.</p>
+                        <div class="space_50"></div>
+                        
+                        <table class="what_table">
+                            <tr class="bottom_border">
+                                <td class="what_table_icon">
+                                    <i class="fa fa-gamepad icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>Games</h3>
+                                    <div class="space_20"></div>
+                                    <p>We making innovative games that range from 'point &amp; click' adventures all the way to open-world sims.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                                <td class="left_border what_table_icon">
+                                    <i class="fa fa-mobile icon_big" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>Mobile Apps</h3>
+                                    <div class="space_20"></div>
+                                    <p>We have exerience in making mobile applications that make use of modern technologies and design principles.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                            </tr>
+                            <tr class="bottom_border">
+                                <td class="what_table_icon">
+                                    <i class="fa fa-html5 icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>HTML5</h3>
+                                    <div class="space_20"></div>
+                                    <p>We have experience in using HTML5 and CSS3 tools in order to make great looking websites with awesome functionality.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                                <td class="left_border what_table_icon">
+                                    <i class="fa fa-wordpress icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>Wordpress</h3>
+                                    <div class="space_20"></div>
+                                    <p>We can design sites based on Wordpress that provide all the great functionality of the platform with a little flair.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="what_table_icon">
+                                    <i class="fa fa-desktop icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>PC Building &amp; Maintenance</h3>
+                                    <div class="space_20"></div>
+                                    <p>Our team can also provide custom-build quotes for desktop PCs as well as hardware maintainance.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                                <td class="left_border what_table_icon">
+                                    <i class="fa fa-pied-piper-pp icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="what_table_content">
+                                    <div class="space_20"></div>
+                                    <h3>Forward-Thinking Technologies</h3>
+                                    <div class="space_20"></div>
+                                    <p>We are always looking to work with cutting-edge technologies, from virtual reality to cloud-based compression.</p>
+                                    <div class="space_50"></div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="space_50"></div>
+                        
+                    </div>
+
+                    <div class="space_20"></div>
+
+
+
+                </div>
+                
+                <div class="space_70"></div>
+                
+                <div class="projects_wrapper" id="projects">
+                    <div class="intro_content_wrapper" >
+
+                        <h2>Projects</h2>
+                            <div class="space_20"></div>
+                            <p>These are some of the projects we have worked on in the past, and also some that we're currently working on.</p>
+                            <div class="space_20"></div>
+
+                        <table class="hover-des" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="project_img_habitat">
+                                    <img class="project" src="res/PongaTitle3.png" alt="Pongagon">
+                                    <div class="caption">
+                                        <div class="blur"></div>
+                                        <div class="caption-text">
+                                            <h1>Pongagon</h1>
+                                            <br>
+                                            <p>Pongagon is a mobile game about keeping a Pong in a Gon.</p>
+                                            <br>
+                                            <p>Available now on Android and iOS!</p>
+                                            <div class="rel_space_5"></div>
+                                            <a href="#"><span class="learn2">learn more</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="project_img_habitat">
+                                    <img class="project" src="res/FWDTitle.png" alt="Friends With Deficits">
+                                    <div class="caption">
+                                        <div class="blur"></div>
+                                        <div class="caption-text">
+                                            <h1>Friends with Deficits</h1>
+                                            <br>
+                                            <p>The #1 app for tracking personal debts.</p>
+                                            <br>
+                                            <p>Coming soon to iOS.</p>
+                                            <div class="rel_space_5"></div>
+                                            <a href="#"><span class="learn2">learn more</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="project_img_habitat">
+                                    <img class="project" src="res/CryptoTitle.png" alt="Cryptotech">
+                                    <div class="caption">
+                                        <div class="blur"></div>
+                                        <div class="caption-text">
+                                            <h1>CryptoTech</h1>
+                                            <br>
+                                            <p>Hacking mini-game made real-time puzzle macro-game.</p>
+                                            <br>
+                                            <p>Coming soon.</p>
+                                            <div class="rel_space_5"></div>
+                                            <a href="#"><span class="learn2">learn more</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <div class="space_50"></div>
+                        
+                        <div class="centre">
+                            <a href="#"><span class="learn">see more</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="space_70"></div>
+                
+                <div class="contact_wrapper" id="contact">
+                    <div class="intro_content_wrapper" >
+
+                        <h2>Get in Touch</h2>
+                            <div class="space_20"></div>
+                        <p>If you would like to enquire about any products and services we offer, please feel free to contact us via the below form, direct email, or even our social media.</p>
+                        <p class="footer_text">Note: Street address listed is mail-address only.</p>
+                            <div class="space_50"></div>
+                        
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="bigtable">
+                                    <label for="name">Name</label>
+                                    <div class="space_10"></div>
+                                    <input type="text" name="name" id="name">
+                                    
+                                    <div class="space_50"></div>
+                                    
+                                    <label for="email">Email</label>
+                                    <div class="space_10"></div>
+                                    <input type="text" name="email" id="email">
+                                    
+                                    <div class="space_50"></div>
+                                    
+                                    <label for="message">Message</label>
+                                    <div class="space_10"></div>
+                                    <textarea name="message" id="message" rows="5"></textarea>
+                                    
+                                    <div class="space_50"></div>
+                                    
+                                    <button onclick="sendMail()" class="myButton">Send Message</button>
+                                    
+                                </td>
+                                <td class="smalltable line">
+                                    <div class="info">
+                                        <label>Address</label>
+                                        <p>Suite 6 </p>
+                                        <p>141 Victoria Road, Drummoyne 2047,</p>
+                                        <p>Sydney, Australia</p>
+                                        
+                                        <div class="space_50"></div>
+                                        
+                                        <label>Email</label>
+                                        <br>
+                                        <a id="email_address" href="#">info@sudo-code.com</a>
+                                        
+                                        <div class="space_50"></div>
+                                        
+                                        <label>Phone</label>
+                                        <p>0450-500-490</p>
+                                        
+                                        <div class="space_50"></div>
+                                        
+                                        <label>Social</label>
+                                        <div class="space_10"></div>
+                                        <a href="https://www.facebook.com/pages/Sudo-Code-Software/248920575263897">
+                                                <i class="fa fa-facebook icon_small" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://twitter.com/sudocodegames">
+                                                <i class="fa fa-twitter icon_small" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://github.com/Sudo-CodeSoftware">
+                                                <i class="fa fa-github icon_small" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                                <i class="fa fa-linkedin icon_small" aria-hidden="true"></i>
+                                        </a>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        
+
+                    </div>
+                </div>
+                
+                <div class="push"></div>
+
+            </div>
+
+            <div class="space_100"></div>
+
+        </div>
+
+        <div class="footer">
+            <p class="footer_text"> Copyright Sudo-Code Software 2016. All rights reserved.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<!-- HEAD -->
+    <head>
+        <title>Sudo-Code Software</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel='stylesheet' type='text/css' href='forumsLayout.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <!-- Placeholder for header stuff like CSS, JS and other headerly shit -->
+        <script src="jquery.min.js" type="application/javascript"></script>
+        <script src="Hax.js" type="application/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                    if (username == ''){
+                        window.location = "../login.html";
+                    }
+               });
+            function logout() {
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            document.cookie = "at=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            }
+            
+        </script>
+    </head>
+<!-- BODY -->
+    <body>
+        <a href="http://sudo-code.com">
+            <img class="logo" src='res/LOGO.png' alt='logo' height='12%' href="http://sudo-code.com">
+        </a>
+        <p1 id="login"><a href="login.html">Login</a></p1>
+        <br>
+        <br>
+        <br>
+                <table id="menu" width="300" border="0" align="center">
+                    <tr>
+                          <td><a href="http://forums.sudo-code.com">Main Portal</a></td>
+                          <td><a href="profile.html">Profile</a></td> 
+                          <td><a id="opt" href="search.html">Search Forums</a></td>
+                    </tr>
+                </table>      
+        <br>
+        <br>
+        <h1 id="username">Username</h1>
+        <form>
+            <input id="submit" type="submit" onclick = "logout();logout();" value="Logout" />
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="image">
+                <img id="usrimg" src='res/DoustIconb.png' alt='logo' height='150vh' width="150vh">
+                <br>
+                <form enctype="multipart/form-data" action="add.php" method="POST">
+                    Photo: <input type="file" name="photo"><br>  
+                    <input type="submit" value="Add"></form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<!-- FOOTER -->
+</html>

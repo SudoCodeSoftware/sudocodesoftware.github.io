@@ -1,0 +1,79 @@
+<html>
+<!-- HEAD -->
+    <head>
+        <title>Sudo-Code Software</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel='stylesheet' type='text/css' href='forumsLayout.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <!-- Placeholder for header stuff like CSS, JS and other headerly shit -->
+        <script src="jquery.min.js" type="application/javascript"></script>
+        <script src="Hax.js" type='application/javascript'></script>
+    </head>
+    <body> 
+        <a href="http://sudo-code.com">
+            <img id="logo" src='res/LOGO.png' alt='logo' height='12%' href="http://sudo-code.com">
+        </a>
+        <br>
+        <br>
+        <br>
+        <table id="menu" width="300" border="0" align="center">
+            <tr>
+                  <td><a href="http://forums.sudo-code.com">Main Portal</a></td>
+                  <td><a href="profile.html">Profile</a></td> 
+                  <td><a id="opt" href="search.html">Search Forums</a></td>
+            </tr>
+        </table> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="reply"></div>
+        <br>
+        <table id="input" width="50%">
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p1>Login</p1>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p1>Sign Up</p1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <form action="/cgi-bin/login.py" method="get">
+                        Username <input type="text" name="username">  <br>
+                        Password <input type="password" name = "password" />
+                        <br>
+                        <br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+                        <input id="submit" type="submit" value="Login" />
+                    </form>
+                </td>
+                <td>
+
+
+                    
+                    <form action="/cgi-bin/register.py" method="get">
+                        <br>
+                        Username <input type="text" name="username">  <br />
+
+                        &#8194; &#8201;Email <input type="text" name="email" />      <br />
+
+                        Password <input type="password" name = "password" />
+                        <br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input id="submit" type="submit" value="Sign Up" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

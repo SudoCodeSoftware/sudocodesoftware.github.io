@@ -1,0 +1,331 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Layout.css"/>
+<script src="Tabs.js" type="text/javascript" ></script> 
+<script src="jquery.min.js" type="application/javascript"></script>
+<script src="phaser.min.js" type="application/javascript"></script>
+    
+    <script>
+        $('#range').change(function(){
+        var span = $('#value');
+        span.html(this.value);
+        });
+        var text = $(this).data("tooltip");
+        
+        $(document).ready(function(){
+        $("#submit2").animate({
+            right: '500px',
+    }, 2000);
+});
+        
+    </script>
+    
+    
+    
+</head>
+<body onload="init()">
+    
+    
+    
+<ul id="tabs">
+    <li><a href="#profile"><img class="le" src="res/usr.png" alt="Usr" style="height:6%;"></a></li>
+  <li><a href="#choices"><img class="le" src="res/Opt.png" alt="Usr" style="height:6%;"></a></li>
+  <li><a href="#settings"><img class="le" src="res/stat.png" alt="Usr" style="height:6%;"></a></li>
+</ul>
+    
+    
+    
+    
+<div class="msg">
+    <h2 class="centre">Feed</h2>
+    
+    <div class="post">
+        
+        <p2>Matthew Friedman has invited you to his EbolAids confrence<br> <br>
+            <input id="submit" type="submit" value="Accept" />
+            &nbsp;
+            <input id="submit1" type="submit" value="Decline" /></p2>
+        
+    </div>
+    
+</div>
+  
+    
+
+    
+<div class="tabContent" id="profile">
+  <h2 class="centre">Profile</h2>
+  <div class="profile">
+    <img class="le" src="res/usr.png" alt="Usr" style="height:30%;">
+  </div>
+</div>
+    
+    
+<div class="tabContent" id="choices">
+  <h2 class="centre">Choices</h2>
+    <table class="sliders">
+        <tr>
+            <td><p1>Work</p1></td>
+            <td></td>
+            <td><input class="bar" type="range" id="range" value="50"/></td>
+        </tr>
+        <tr>
+            <td><p1>School</p1></td>
+            <td></td>
+            <td><input class="bar" type="range" id="range" value="50"/></td>
+        </tr>
+        <tr>
+            <td><p1>Gym</p1></td>
+            <td></td>
+            <td><input class="bar" type="range" id="range" value="50"/></td>
+        </tr>
+        <tr>
+            <td><p1>Hang with</p1></td>
+            <td class="select">
+                <select name="State" id="input7">
+                    <option value="Cohen">Cohen</option>
+                    <option value="Matt">Matt</option>
+                    <option value="J-Mo">J-Mo</option>                              
+                </select>
+            </td>
+            <td><input class="bar" type="range" id="range" value="50"/></td>
+        </tr>
+    </table>
+  </div>
+  
+
+
+
+<div class="tabContent" id="settings">
+  <h2 class="centre">Statistics</h2>
+    <br>
+    <p1>General Stats</p1>
+    <table class="statist">
+        <tr>
+            <td>
+                <a data-tooltip="Age" class="tooltip">
+                    <img class="le" src="res/age.png" alt="age" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Beauty" class="tooltip">
+                    <img class="le" src="res/beauty.png" alt="beauty" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Creativity" class="tooltip">
+                    <img class="le" src="res/art.png" alt="art" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Culture" class="tooltip">
+                    <img class="le" src="res/culture.png" alt="culture" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Education" class="tooltip">
+                    <img class="le" src="res/edu.png" alt="education" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Energy" class="tooltip">
+                    <img class="le" src="res/energy.png" alt="energy" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Happiness" class="tooltip">
+                    <img class="le" src="res/happy.png" alt="happiness" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Appeal" class="tooltip">
+                    <img class="le" src="res/appeal.png" alt="appeal" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Physical Appeal" class="tooltip">
+                    <img class="le" src="res/physical.png" alt="physical appeal" style="height:3%;">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            
+        </tr>
+        </table>
+    <br>
+    <table class="statist">
+        <tr>
+            <td>
+                <a data-tooltip="Height" class="tooltip">
+                    <img class="le" src="res/height.png" alt="height" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="IQ" class="tooltip">
+                    <img class="le" src="res/iq.png" alt="iq" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Money" class="tooltip">
+                    <img class="le" src="res/money.png" alt="money" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Self Control" class="tooltip">
+                    <img class="le" src="res/control.png" alt="control" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Humour" class="tooltip">
+                    <img class="le" src="res/humour.png" alt="sense of humour" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Social Skills" class="tooltip">
+                    <img class="le" src="res/socialskills.png" alt="social skills" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Strength" class="tooltip">
+                    <img class="le" src="res/Strength.png" alt="strength" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Enlighten- ment" class="tooltip">
+                    <img class="le" src="res/enlightenment.png" alt="enlightenment" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Smarts" class="tooltip">
+                    <img class="le" src="res/smarts.png" alt="smarts" style="height:3%;">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <p1>Health Stats</p1>
+    <table class="statist">
+        <tr>
+            <td>
+                <a data-tooltip="General Health" class="tooltip">
+                    <img class="le" src="res/health.png" alt="health general" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Cardio" class="tooltip">
+                    <img class="le" src="res/cardio.png" alt="cardio" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Dental" class="tooltip">
+                    <img class="le" src="res/dental.png" alt="dental" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Muscular" class="tooltip">
+                    <img class="le" src="res/skelital.png" alt="skellital" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Respiratory" class="tooltip">
+                    <img class="le" src="res/respiritory.png" alt="respiritory" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Skin" class="tooltip">
+                    <img class="le" src="res/skin.png" alt="skin" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="BMI" class="tooltip">
+                    <img class="le" src="res/bmi.png" alt="bmi" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Weight" class="tooltip">
+                    <img class="le" src="res/weight.png" alt="weight" style="height:3%;">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+        </tr>
+        </table>
+    <br>
+    <br>
+    <br>
+    <p1>Relationship Stats</p1>
+    <table class="statist">
+        <tr>
+            <td>
+                <a data-tooltip="Family" class="tooltip">
+                    <img class="le" src="res/relationships.png" alt="family" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Friends" class="tooltip">
+                    <img class="le" src="res/friends.png" alt="friends" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Spouse" class="tooltip">
+                    <img class="le" src="res/spouse.png" alt="spouse" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Pets" class="tooltip">
+                    <img class="le" src="res/pets.png" alt="pets" style="height:3%;">
+                </a>
+            </td>
+            <td>
+                <a data-tooltip="Popularity" class="tooltip">
+                    <img class="le" src="res/popularity.png" alt="popularity" style="height:3%;">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+            <td><p1>0</p1></td>
+        </tr>
+        </table>
+</div>
+
+            <div class="end">
+    <input id="submit2" type="submit" value="Accept Choices" />
+    </div>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "Meslo";
+  src: url(MesloLGL-Regular.ttf); format("truetype");
+}
+body {
+    color: black;
+    text-align:center;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+table {
+    align-content: center;
+    margin: auto;
+    font-family: Meslo;
+    text-align: center;
+    border-style: solid;
+    border-color: #5CE62E;
+}
+
+#user_login {
+    align-content: center;
+    margin: auto;
+    font-family: Meslo;
+    text-align: center;
+    border-style: solid;
+    border-color: #5CE62E;
+    
+}
+
+    
+td {
+    color: #5CE62E;
+    text-align: center;
+    font-size: 14px;
+}
+p {
+    font-family: Meslo;
+    font-size: 10px;
+    color: #5CE62E;
+}
+/*Links n'shit*/
+a {color: #5CE62E; text-align: center;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none; background-color:blue;}
+a:active {text-decoration: none;}
+
+#menu {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    font-family: Meslo;
+}
+p1 {
+    color: #5CE62E;
+    font-family: meslo;
+    text-align: center;
+    font-size: 12px;
+    width: 700px;
+}
+div {
+    color: #5CE62E;
+    font-family: meslo;
+    text-align: center;
+    font-size: 10px;
+}
+h1 {
+    color: #5CE62E;
+    text-align: center;
+    font-size: 17px;
+    font-family: Meslo;
+}
+
+#form {
+    align-content: center;
+}
+
+.logo {
+    position: absolute; 
+    top: 10px; 
+    left: 20px; 
+}
+
+#opt {
+    position: center;
+}
+
+#login {
+    position:fixed;
+    width: inherit;
+    top: 20px;
+    right: 40px;
+}
+#input {
+    height: 200px;
+    background-color: #082108;
+}
+
+#half {
+    height: .5em; 
+}
+
+#submit {
+    background-color: #5CE62E;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    color: #082108;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+#submit:hover {background-color: #3db215;}
+
+#submit2 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+.edit {
+    background-color: #5CE62E;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    color: #082108;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    width: 50px;
+}
+.edit:hover {background-color: #3db215;}
+
+.delete {
+    background-color: #5CE62E;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    color: #082108;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    width: 50px;
+}
+.delete:hover {background-color: #3db215;}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    align-content: center;
+    width: 100%;
+}
+
+#image {
+    position:fixed;
+    left: 10%;
+}
+
+#posts {
+    text-align: left;
+    vertical-align: top;
+}
+
+.posts3 {
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+#posts1 {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 10px;
+}
+
+#search {
+    border-width: 0px;
+}
+
+#sbox {
+    width: 300px;
+    height: 20px;
+    text-align:center;
+    background-color: white;
+    color: black;
+    border-width: 0px;
+}
+
+.half-line {
+  line-height: .5em;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.inp {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#reply {
+    background-color: #082108;
+    color: #5CE62E;
+    border-color: #5CE62E;
+}
+
+#add {
+    cursor: pointer;
+}
+
+.UP {
+    background-color: #5CE62E;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    color: #082108;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    width: 50px;
+    position: absolute;
+    right: 694px;
+}
+.UP:hover {background-color: #3db215;}
+
+.chair {
+    position: absolute;
+}
+
+#confirm {
+    position: absolute;
+    align-self: center;
+    left:0; 
+    right:0;
+    margin:0 auto;
+    width: 250px;
+}

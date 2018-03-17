@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Meslo";
+  src: url(MesloLGL-Regular.ttf); format("truetype");
+}
+body {
+    color: black;
+    text-align:center;
+    background-color: black;
+
+}
+table {
+    align-content: center;
+    margin: auto;
+    font-family: Meslo;
+    border-style: solid;
+    border-color: #5CE62E;
+
+}
+
+td {
+    color: #5CE62E;
+    font-size: 14px;
+}
+p {
+    font-family: Meslo;
+    font-size: 10px;
+    color: #5CE62E;
+}
+/*Links n'shit*/
+a {color: #5CE62E; text-align: center;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+p1 {
+    color: #5CE62E;
+    font-family: meslo;
+    text-align: justify;
+    font-size: 12px;
+}
+div {
+    color: #5CE62E;
+    font-family: meslo;
+    text-align: center;
+    font-size: 10px;
+}
+h1 {
+    color: #5CE62E;
+    text-align: center;
+    font-size: 17px;
+    font-family: Meslo;
+}
+h2 {
+    font-family: meslo;
+    font-size: 30px;
+    color: #5CE62E;
+}
+
+#banner {
+    text-align: center;
+}
+
+#names {
+    text-align: center;
+}
+
+.downloadwords {
+    text-align: center;
+}
+
+.line-separator{
+    width: 50%;
+    height:1px;
+    background:black;
+    border-bottom:1px solid #5CE62E;
+    margin: 0 auto;
+}
+
+#submit {
+    background-color: #5CE62E;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:1px;
+    color: #082108;
+    font-family: meslo;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+#submit:hover {background-color: #3db215;}
+
+.flag {
+  margin: auto;
+  position: relative; 
+  background: #CC5252;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+    background-color: #FF2D55;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding:0px;
+}
+.dont {
+
+}
