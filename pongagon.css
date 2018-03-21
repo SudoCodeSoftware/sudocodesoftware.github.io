@@ -1,0 +1,46 @@
+@font-face {
+  font-family: BadWrite;
+  src: url(./res/BadWrite_Full.ttf);
+}
+
+html {
+	background-color: #EB445A;
+}
+
+body {
+	font-family: "BadWrite";
+	background: url(./res/phone.png) no-repeat;
+	background-position: bottom;
+	height: 100%;
+	background-size: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: 90%;
+    }
+}
+
+.image {
+	height: 10%;
+	margin-top: 20%;
+}
+
+.right {
+	float: right;
+	margin-right: 10%;
+}
+
+.left {
+	float: left;
+	margin-left: 10%;
+}
+
+.top-margin {
+	margin-top: 5%;
+}
+
+.promo-text {
+	color: white;
+	text-align: center;
+}
